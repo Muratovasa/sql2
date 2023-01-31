@@ -1,5 +1,5 @@
 select product_name
-from netology.ORDERS o
-  join netology.CUSTOMERS C
+from products.ORDERS o
+  join produts.CUSTOMERS C
       on C.id = o.customer_id
-where LOWER(name) LIKE 'alexey'
+where LOWER(name) = :name
